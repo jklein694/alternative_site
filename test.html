@@ -7,8 +7,10 @@
 
 
 <!-- viewform?usp=pp_url&&entry.139672798=asgsda&entry.402268353=hjkl&entry.1826426967=adsdf -->
+<!-- https://docs.google.com/forms/d/e/1FAIpQLScbDy34xmkhMDpQlEut74XnJ4yTxpFAtsY7ybVVy1c3g_dKPA/viewform?usp=pp_url&entry.141596841=Blank&entry.139672798=Last&entry.402268353=email&entry.1826426967=testtsing -->
 
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbDy34xmkhMDpQlEut74XnJ4yTxpFAtsY7ybVVy1c3g_dKPA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbDy34xmkhMDpQlEut74XnJ4yTxpFAtsY7ybVVy1c3g_dKPA/formResponse?"
+    target="hidden_iframe" onsubmit="submitted=true;">
     First name:<br>
     <input type="text" name="entry.141596841" id="entry.141596841"><br>
     Last name:<br>
@@ -19,16 +21,15 @@
     <input type="text" name="entry.182642696" id="entry.182642696">
     <input type="submit" value="Submit">
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted = false;</script>
-<script type="text/javascript">
-    $('#gform').on('submit', function (e) {
-        $('#gform *').fadeOut(2000);
-        $('#gform').prepend('Your submission has been processed...');
-    });
-</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
 
 </form>
