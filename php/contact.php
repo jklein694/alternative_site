@@ -1,10 +1,17 @@
 <?php
     
 	
+	$host        = "host = localhost";
+	$port        = "port = 5432";
+	$dbname      = "dbname = email";
+	$credentials = "user = joekleinweb password=Coconut1";
 
-	// //DATABASE
-	// $db_connection = pg_connect("host=localhost dbname=email user=joekleinweb password=Coconut1");
-
+	$db = pg_connect( "$host $port $dbname $credentials"  );
+	if(!$db) {
+    	echo "Error : Unable to open database\n";
+	} else {
+    	echo "Opened database successfully\n";
+	}
 
 	$errors = array();
 
@@ -76,3 +83,4 @@
 	$result .= '</div>';
 
 	echo $result;
+?>
