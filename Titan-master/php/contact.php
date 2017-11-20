@@ -1,4 +1,10 @@
 <?php
+    
+	
+
+	// //DATABASE
+	// $db_connection = pg_connect("host=localhost dbname=email user=joekleinweb password=Coconut1");
+
 
 	$errors = array();
 
@@ -37,14 +43,14 @@
 		die();
 	}
 
-
+	// $dbconn3 = pg_connect("host=localhost port=5432 dbname=email user=joekleinweb password=Coconut1");
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'info@example.com';  // please change this email id
-	$subject = 'Contact Form : Titan - The best downloaded template ever';
+	$to = 'jklein694@gmail.com';  // please change this email id
+	$subject = 'Joe- Reaching Out From WebSite';
 
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
