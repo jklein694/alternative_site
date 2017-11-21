@@ -217,7 +217,7 @@ a,
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
 }
 
 .side-image-text {
@@ -716,6 +716,34 @@ canvas {
   color: #fff;
 }
 
+.btn.btn-border2-w {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  color: rgb(8, 8, 8);
+}
+
+.btn2 {
+  display: table-caption;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}
+
 .btn.btn-border-w:hover,
 .btn.btn-border-w:focus {
   background: #fff;
@@ -873,9 +901,21 @@ a {
   color:#e5e5e5;
 }
 
+a2 {
+  color: #000000;
+}
+
 a:hover, a:focus {
   text-decoration: none;
   color: #aaa;
+  outline: 0;
+}
+
+a2:hover,
+a2:focus {
+  text-decoration: none;
+  color: rgb(231, 189, 0);
+  border: 1px solid rgba(231, 189, 0);
   outline: 0;
 }
 
@@ -1454,8 +1494,8 @@ General Styles - Owlcarousel
 
 /* Contact Page Header */
 .contact-page-header {
-  background-position: 13% 45%;
-  background-repeat: no-repeat;
+  /* background-position: 13% 45%; */
+  /* background-repeat: no-repeat; */
 }
 
 .contact-page-header:before {
@@ -2947,4 +2987,40 @@ Google map
   .works-grid-5 .work-item {
     width: 100%;
   }
+}
+
+/* /////////////////////////////////////////////////////////////////////
+//  06 - Testimonial
+/////////////////////////////////////////////////////////////////////*/
+
+#testimonial {
+  background: url(../images/parallax.jpg);
+  padding: 80px 0px 80px 0px;
+  color: #fff;
+  background-attachment: inherit;
+  background-size: cover;
+}
+
+.testimonila-block {
+  text-align: center;
+}
+
+.testimonila-block img {
+  border-radius: 50%;
+  border: 1px solid #000;
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 30px;
+}
+
+.testimonila-block p {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.testimonila-block strong {
+  font-size: 2em;
 }
