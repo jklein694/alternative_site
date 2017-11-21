@@ -585,7 +585,7 @@ a,
 .scroll-up a:hover,
 .scroll-up a:active {
   opacity: 1;
-  color: #000;
+  color: rgba(236, 221, 221, 0.966);
 }
 
 /* Video */
