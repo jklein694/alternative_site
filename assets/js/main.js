@@ -606,8 +606,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
         
-        var mkr = new google.maps.LatLng(38.9055, -77.0345);
-        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(38.9055, -77.0345);
+        var mkr = new google.maps.LatLng(38.9280, -77.0367);
+        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(38.9280, -77.0367);
 
         function init() {
             // Basic options for a simple Google Map
@@ -828,8 +828,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             var map = new google.maps.Map(mapElement, mapOptions);
 
             // Let's also add a marker while we're at it
-            var image = new google.maps.MarkerImage('assets/images/map-icon.png',
-                new google.maps.Size(59, 65),
+            var image = new google.maps.MarkerImage('assets/images/location_icon2.png',
+                new google.maps.Size(50, 75),
                 new google.maps.Point(0, 0),
                 new google.maps.Point(24, 42)
             );
@@ -837,7 +837,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             var marker = new google.maps.Marker({
                 position: mkr,
                 icon: image,
-                title: 'Titan',
+                title: "Joe's Location",
                 infoWindow: {
                     content: '<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
                 },
