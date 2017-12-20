@@ -897,13 +897,48 @@ canvas {
 /*--------------------------------------------------------------
 	Typography
 --------------------------------------------------------------*/
-a {
+/* a {
   color:#e5e5e5;
+} */
+
+/* my addition for the arrow down button */
+
+
+a:hover .bottom{
+  border: 0.2em solid #00E5FF;
+  z-index: 3;
 }
 
-a2 {
-  color: #000000;
+a:hover .bottom:after {
+  border-top: 0.2em solid #00E5FF;
+  border-right: 0.2em solid #00E5FF;
+  z-index: 3;
 }
+
+.bottom {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.2em solid #FFFFFF;
+  border-radius: 50%;
+  margin-left: 0.75em;
+  z-index: 3;
+}
+
+.bottom:after {
+  content: '';
+  display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.2em solid #FFFFFF;
+  border-right: 0.2em solid #FFFFFF;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  z-index: 3;
+}
+/* end of my addition for arrow down button */
 
 a:hover, a:focus {
   text-decoration: none;
